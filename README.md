@@ -24,6 +24,9 @@ $ go get // 拉取依赖的包文件
 $ go build -ldflags "-s -w" -o yd cli.go core.go // 压缩二进制文件 并 按照名为 yd 进行打包输出包名
 ```
 
+然后将你编译好的二进制可执行程序 拷贝的 你的工作目录 go/bin 中即可
+
+
 ### 使用
 ```
 $ yd --help
