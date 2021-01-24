@@ -4,6 +4,8 @@
 
 利用 强大的 go build 命令参数
 
+修改并添加因为golang 版本更新强制使用 go mod 作为包管理
+ 
 
 **获取源码**
 ```bash
@@ -14,13 +16,11 @@ $ git clone https://github.com/driverzhang/golang-youdao.git
 
 * Windows
 ```golang
-$ go get
 $ go build -ldflags "-s -w" -o yd.exe cli.go core.go
 ```
 
 * Linux/MacOS
 ```golang
-$ go get // 拉取依赖的包文件
 $ go build -ldflags "-s -w" -o yd cli.go core.go // 压缩二进制文件 并 按照名为 yd 进行打包输出包名
 ```
 
